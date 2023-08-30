@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTodoList</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/todo_list/assets/apple-touch-icon-7760e91d.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAyhJREFUWEfFV3tIU2EU/33X+RYVtjDLELTAtDITNct8gBH0h1Gy0IgelBEFWZZNUdEoSAotCSsxKqSIDCuXERWRoqaoZaYtwzQx8VG+esz37hd35drVranzuvPPhfOd+/v9ztk5Z/cjAJAgj4xkwaQRCk8QMJxPMKNgKYGCAZuWHlFQQP6Qk3sEhAhGqgOYglIGjJTIHknfgWLlfJJruAjqiaxQqhK87Pqyo2CJTC6lJsn+L6mgAtzEXghwDcevke94+emB+jnZBBPgbO+KwxvOQsSI1JyfexXIeZU2PwIYYoZDQWfg4uiuIaSgSCraAZaqeCIEqUCwewQ2e+7kEX3pb0J2WZLwFZDYOiM25DzMzSw0ZFzWl8uS0T7QLKwAAoKYdalwE3vyiEqa5XiiuKVz2Ob0Jwhw3Yitq2J4RD3KTmSVxGNMNSqsAAcrMY6FZsDK3OZf41GK3IpTaOlV6F01c1aB3f4yLHfy5RFVtj7Dw/pr/91zcyLAe/F6RK+J5RENDPXgYvFxDI8PCSvA1sIecWGZ4J7adrMqHY3dbwxueT0VIPBa6AeJnTMUndX4puzQCxTlcwSrXYJ457Xtpbhbe8kgORegU8AmjyiELdumBhhVjeB2TQY+fn07BdDDyRd7/GU8P7fvLxTHQTn6c/YCEsOvwMFarAFQsePIr81GXUe5xmclslF3vXYcd3jndRYvzpAKnRU4EJgKN4kX711KWRQ23EBl61O1n5t3bu61TdFVg7zqc4Y4eec6BXDrdH9gChytJXwRoHjemI/Wvg+ICUwF0fqKGx4bRGZxHH4M9xkvgEPgyPetTcYCu0VTAEfGh2EpsuL579floKrtxYzI9TbhBAo3WnsDEnl/q7oYmnsakFtxGsDMP64MLiJLkTV2+cXDXbJCZ3bclGQVn0DvYPeMszdYgQlEEWOOaN+j6t0w2R6/z0NpS9GsyKctgAtkCINI74PwXRKqIWvrb8LV8hSwlBVegFotCEKWboGPSzD6lF0obLgObucbYwZ7wBjw6bxr+ovJSbm0ngC6W3w6KRgRQ4EGE19OqVR9I06Qb49kQU1yPf8NwZFGIJ27MxwAAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXhJREFUOE9jLN8YnMnAyNTFwMDAw0Aa+MLwn6GMsXxT6GcyNMOs+gIy4D+xFnOycjMoCGky3Hp9geHvvz9gbSQYwMiQYlnDoCKiy7Dl6kKGI/e2kmaAqZwzQ7B+OsN/hv8Ms481Mtx7e414A/g4BBkKHfoYQF449Wgvw7qLM+G+JsoLsaalDNoSpgyffrxj6D9QxPD99zfiDdCTsmSIMi4Ea1h0uovh2oszKGEOd4EQlxiDj3YCw8VnRxkuPj0KVsTFxstQ5NDHwMPOz3Dx6TGG5ecmYEQY3AALeVeGAL1Uhv///4ND+ej9bQxhhjkMRjJ2DF9/fWbo31/E8OXXR9wGsDKzMcSYFDOoixmCFV1+doJBV8oCzF55bjLD+aeHsSYXlEBkZmRmCDXMZjCQtoErvvHyHMOCUx040xpGLDAyMDL46SYxWCq4M/z4851hwoEihg/f3xJvAEyljqQ5w4dvrxmefLyHN6VTITNtDM1kYGQgMzv/KwMAcLiUmdFV5n8AAAAASUVORK5CYII=">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
+  <script type="module" crossorigin src="/todo_list/assets/index-e4e8c483.js"></script>
+  <link rel="stylesheet" href="/todo_list/assets/index-68a9dab1.css">
+
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
